@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf | Ishita Agarwal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;                
+            padding: 1.5rem;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+            z-index: 1000;
+        }
+        
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 2rem;
+            transition: opacity 0.2s ease;
+        }   
+
+        .nav a:hover {
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;        
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+
+        .book-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .book-section h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            margin-top: 0.8rem;
+            color: #2a2a2a;
+        }
+
+        .book {
+            margin-bottom: 0.4rem;
+        }
+
+        .book-title-line {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            color: #1a1a1a;
+            font-weight: 400;
+        }
+
+        .book-title-line .author {
+            font-style: italic;
+            color: #4a4a4a;
+        }
+
+        .book p.description {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .nav a {
+                margin: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">About Me</a>
+        <a href="bookshelf.html">Bookshelf</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>My Bookshelf</h1>
+        <div class="book-section">
+            <h2>Currently Reading</h2>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>The Almanack Of Naval Ravikant</span>
+                    <span class="author"> by Eric Jorgenson</span>
+                </div>
+                <br>
+                <p> I want to start reading more often. Would love some recommendations!</p>
+            </div>
+
+            <h2>What I've Already Read</h2>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>1. The Harry Potter Series</span>
+                    <span class="author"> by J.K. Rowling</span>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>2.Behind Her Eyes</span>
+                    <span class="author"> by Sarah Pinborough</span>
+                </div>
+                <p class="description">Ever heard of Lucid dreaming? Well this book introduced me to it and what a ride!</p>
+            </div>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>3. Dark Matter</span>
+                    <span class="author"> by Blake Crouch</span>
+                </div>
+                <p class="description">Another one that messes with your mind in the best way possible.</p>
+            </div>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>4. Verity</span>
+                    <span class="author"> by Colleen Hoover</span>
+                </div>
+                <p class="description">The kind of book that leaves you staring at the ceiling at 3AM, trying to figure out what really happened. The main character? Absolutely captivating. The ending? Still debating what to believe!</p>
+            </div>
+            <h2>Upcoming Reads</h2>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>1. Shoe Dog</span>
+                    <span class="author"> by Phil Knight</span>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book-title-line">
+                    <span>2. Zero To One</span>   
+                    <span class="author"> by Peter Thiel</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
