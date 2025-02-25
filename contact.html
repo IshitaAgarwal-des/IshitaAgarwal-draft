@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ishita Agarwal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 2rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav a:hover {
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+
+        .contact-content {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #4a4a4a;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 0.5rem 0;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            .nav a {
+                margin: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">About Me</a>
+        <a href="bookshelf.html">Bookshelf</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Get in Touch</h1>
+        
+        <div class="contact-content">
+            <p>I'm always open to interesting conversations and opportunities.</p>
+            <p>Feel free to reach out to me through any of these platforms:</p>
+            
+            <div class="social-links">
+                <a href="mailto:ishitagarwal.23@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/ishita-agarwal-b25350293/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/IshitaAgarwa1" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
